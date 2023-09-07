@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    
+</head>
+<body Style="background-color:rgb(174, 213, 219);">
+    <h3>Registration Form</h3><br>
+    <form action="a"onsubmit="signup()"
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="mname">Middle name:</label><br>
+        <input type="text" id="mname" name="mname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+      <label for="country">Choose Country:</label>
+      <select id="country" name="country">
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Shri lanka">Shri lanka</option>
+        <option value="Bhutan">Bhutan</option><br>
+    </select>
+    <br><br>
+    <label for="Gender">Choose Gender:</label>
+    <select id="Gender" name="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="others">others</option>
+    </select><br><br>
+    <b>Enter Address</b><br>
+    <textarea name="Flat no" rows="10" cols="30"></textarea><br><br>
+</form>
+    <button>Sign up</button>
+    <script>
+        function signup(){
+           const country= document.getElementById('fname').country;
+           console.log(country)
+        }
+    </script>
+
+</body>
+</html>
